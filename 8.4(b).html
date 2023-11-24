@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  *{
+    margin: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    text-align: center;
+    background-color:pink;
+    padding: 10px;
+    color:white;
+    font-family: monospace;
+    font-size: 25px;
+}
+header,footer {
+    background-color: rgb(85, 183, 183);
+    height: 15vh;
+    line-height: 15vh;
+    margin-bottom: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+main {
+    height: 70vh;
+    display: flex;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+article {
+    flex: 3;
+    order: 2;
+    background-color: brown;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+aside {
+    background-color: darkcyan;
+    flex: 1;
+    order: 1;
+    margin-right: 10px;
+}
+img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+</style>
+<body>
+    <header>Header</header>
+    <main>
+        <article>
+            Article
+            <div>
+                <img src="img/tulip1.jpg" alt="">
+                <img src="img/tulip2.jpg" alt="">
+                <img src="img/tulip3.jpg" alt="">
+            </div>
+        </article>
+        <aside>Aside</aside>
+    </main>
+    <footer>Footer</footer>
+</body>
+</html>
